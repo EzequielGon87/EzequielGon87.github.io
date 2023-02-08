@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+
+
+    <title>Proyecto CV</title>
+</head>
+<body>
+
+          <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mayra</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul> 
+
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    
+
+        <!--  INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/persona.jpeg" alt="">
+                </div>
+                <h1>Mayra Allende</h1>
+                <h2>Estudiante Front-end & Back-end</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-solid fa-rss"></i></a>                    
+                    <li class="nav-item">
+                         <audio id="playpau" src="sonido/SummerMusic.mp3" autoplay>
+                         Audio no compatible con su navegador, intente con otro.</audio> 
+                         <input type="button" id="boton_play_pause" value="PAUSE" /> 
+                    </li>
+
+                </div>
+            </div>
+        </section>
+
+
+         <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Mayra Allende.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento:</strong>
+                            05/05/1997
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            (011) 4484-8569
+                        </li>
+                        <li>
+                            <strong>E-Mail:</strong>
+                             Ejemplo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Estado Civil:</strong>
+                            Soltera.
+                        </li>
+                        <li>
+                            <strong>Disponibilidad horaria:</strong>
+                            Full-time.
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            San Justo, Buenos Aires, Argentina.
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+                                <!-- intereses -->
+                                <div class="col">
+                                    <h3>Intereses</h3>
+                                    <div class="contenedor-intereses">
+                                        <div class="interes">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            <span>JUEGOS</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-headphones"></i>
+                                            <span>MUSICA</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-plane"></i>
+                                            <span>VIAJAR</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-person-hiking"></i>
+                                            <span>CAMINAR</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-book"></i>
+                                            <span>LIBROS</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-car"></i>
+                                            <span>AUTOS</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-regular fa-futbol"></i>
+                                            <span>FUTBOL</span>
+                                        </div>
+                                        <div class="interes">
+                                            <i class="fa-solid fa-paw"></i>                                           
+                                            <span>ANIMALES</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button>
+                                Descargar CV <i class="fa-solid fa-download"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </div>
+                    </section>
+
+
+
+                      <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Instrumentadora</h4>
+                        <span class="casa">Universidad de Moron</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de La Matanza</span>
+                        <span class="fecha">2014 - 2018</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Psicologia</h4>
+                        <span class="casa">Universidad de Buenos Aires</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Empresa</span>
+                        <span class="fecha">2016 - 2019</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>MULTI-TAREAS</h4>
+                        <span class="casa">Burger King</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?  </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Encargada</h4>
+                        <span class="casa">Pone Primera</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Tú Nombre">
+                        <input type="text" placeholder="Número telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!-- Mapa -->
+                    <div class="col">
+                        <img src="img/ubicacion.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    San Justo, Buenos Aires, Argentina.
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamame: (011) 4484-8569
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: Ejemplo@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+            <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
